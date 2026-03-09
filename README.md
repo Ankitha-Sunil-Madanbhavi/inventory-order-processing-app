@@ -98,7 +98,7 @@ php artisan test
 
 ## Features
 
-1. **Place an Order** — Validates stock for all items. All-or-nothing — if one item fails, nothing is reserved. Stock never goes negative even under concurrent requests.
+1. **Place an Order** — Validates stock for all items. All-or-nothing if one item fails, nothing is reserved. Stock never goes negative even under concurrent requests.
 2. **Cancel an Order** — Only `pending` or `confirmed` orders can be cancelled. Stock is fully restored on cancellation.
 3. **List Orders** — Paginated, filterable by status, includes nested items and product details. Fast at any scale.
 4. **Low Stock Report** — Returns products below a configurable threshold. Change the threshold via `LOW_STOCK_THRESHOLD` in `.env`
